@@ -364,10 +364,7 @@ border-radius: inherit;
     }
 }
 
-#image-context, #expression-picker, #channel-context {
-    position: absolute;
-}
-form.form__7ab21 {
+#image-context, #expression-picker, #channel-context, #user-context, form.form__7ab21 {
     position: relative;
 }
 
