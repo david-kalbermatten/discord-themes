@@ -13,6 +13,7 @@
 :root{
     --blur: 20px; /*Popup blur size*/
     --opacity: 0.5; /*Popup background opacity*/  
-    --radius: 30px; /*Popup border radius*/
-    /*--pop-up-color: black; /*uncomment for custom Popup color*/ 
+    --radius: 8px; /*Popup border radius*/
+    --radius-small: 5px; /*Context popups radius*/
+  /*--pop-up-color: black; /*uncomment for custom Popup color*/ 
 }
