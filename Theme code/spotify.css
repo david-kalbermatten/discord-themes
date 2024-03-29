@@ -127,11 +127,11 @@
 
 #vc-spotify-album-expanded-wrapper ~ #vc-spotify-progress-bar {
     top: -90px;
-    left: var(--expanded-margin-left);
+    left: var(--expanded-margin-left)!important;
     padding-top: 18px;
     margin-left: 0px !important;
     padding-right: 8px;
-    width: calc(100% - 16px - var(--expanded-margin-left));
+    width: calc(100% - 16px - var(--expanded-margin-left)!important);
     padding-bottom: 38px;
     border-bottom-left-radius: var(--spotify-image-border-radius);
     border-bottom-right-radius: var(--spotify-image-border-radius);
@@ -155,7 +155,7 @@
     display: none;
 }
 #vc-spotify-album-expanded-wrapper {
-    margin-left: var(--expanded-margin-left);
+    margin-left: var(--expanded-margin-left)!important;
     margin-top: -1px;
 }
 
@@ -169,10 +169,10 @@
 }
 
 div#vc-spotify-info-wrapper {
-    margin-left: var(--small-margin-left);
+    margin-left: var(--small-margin-left)!important;
 }
 div#vc-spotify-progress-bar {
-    margin-left: var(--small-margin-left);
+    margin-left: var(--small-margin-left)!important;
 }
 
 #vc-spotify-player {
