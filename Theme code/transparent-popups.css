@@ -360,14 +360,11 @@ border-radius: inherit;
     background: none;
 }
   
-@supports (background: color-mix(in srgb, red 50%, blue 50%)
-    ) {
-    :not(aside):not(.customizationSection__0f57e)>.userProfileOuterThemed__1fbd7::before {background: linear-gradient(
-        color-mix(in hsl, var(--profile-gradient-primary-color) calc(100% * var(--opacity)), transparent),
-        color-mix(in hsl, var(--profile-gradient-secondary-color) calc(100% * var(--opacity)), transparent)
-    )
-    !important; opacity:1;
-    }
+:not(aside):not(.customizationSection__0f57e)>.userProfileOuterThemed__1fbd7::before {
+    background: linear-gradient(
+        var(--profile-gradient-primary-color),
+        var(--profile-gradient-secondary-color))!important; 
+    opacity:var(--opacity);
 }
 
 #image-context, #expression-picker, #channel-context, 
