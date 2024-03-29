@@ -364,7 +364,7 @@ border-radius: inherit;
     background: linear-gradient(
         var(--profile-gradient-primary-color),
         var(--profile-gradient-secondary-color))!important; 
-    opacity:var(--opacity);
+    opacity:var(--opacity)!important;
 }
 
 #image-context, #expression-picker, #channel-context, 
