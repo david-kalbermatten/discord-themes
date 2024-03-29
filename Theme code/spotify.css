@@ -131,7 +131,7 @@
     padding-top: 18px;
     margin-left: 0px !important;
     padding-right: 8px;
-    width: calc(100% - 16px - var(--expanded-margin-left)!important);
+    width: calc(100% - 16px - var(--expanded-margin-left))!important;
     padding-bottom: 38px;
     border-bottom-left-radius: var(--spotify-image-border-radius);
     border-bottom-right-radius: var(--spotify-image-border-radius);
