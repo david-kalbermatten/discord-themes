@@ -372,12 +372,13 @@ border-radius: inherit;
 }
 
 #image-context, #expression-picker, #channel-context, 
-#user-context, #mentions-filter, #dev-context  {
+#user-context, #mentions-filter, #dev-context, .flexible__1e80b {
     position: relative;
 }
-form.form__7ab21 {position: inherit;}
 
-
+form.form__7ab21 {
+    position: inherit;
+}
 
 .backdrop__1a911 {
     background: none!important;
