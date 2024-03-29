@@ -58,7 +58,8 @@
 .header_e5d8b2, .modal__082b3, .rolePill_f50ff5,  .previewContainer__1e0bb,
 .container_eb737e,.container_cdf5a8, .footer_f06dbb, 
 .reactors__0f305, .scroller__9a4f3, .list__4e6aa, .header__6d44a, .container__9922f, .wrapper__35c78,
-.header__3b038, .autocomplete__743a5 .wrapper__45980, .guildSection__15ac6{
+.header__3b038, .autocomplete__743a5 .wrapper__45980, .guildSection__15ac6,
+.authorize__9e6f3, .footer_b96583{
     background: none!important;
 }
 
@@ -74,7 +75,7 @@
 .uploadModal__6eb75, .rootWithShadow_d20cd6:has(>.reactorsContainer__867ec),
 .root_a28985:has(>[id]), .root_a28985:has(>.transitionGroup_cf0aed),
 #manage-multi-account, .container_f93da8, [class^="toast_"],
-.languageSelector__4840c, .recentMentionsPopout__40c54  {
+.languageSelector__4840c, .recentMentionsPopout__40c54{
     background: transparent!important;
     backdrop-filter: blur(var(--blur));
 }
@@ -128,7 +129,8 @@
 .root_a28985:has(>.transitionGroup_cf0aed)::after, 
 .container_f93da8::after, .languageSelector__4840c::after, 
 .recentMentionsPopout__40c54::after, 
-.root_a28985:has(>div>.connectionsContainer__52d37)::after {
+.root_a28985:has(>div>.connectionsContainer__52d37)::after,
+.popout_a6e77f::after {
     content: "";
     top: 0;
     left: 0;
