@@ -96,7 +96,7 @@
 #manage-streams::after, #spotify-album-menu::after, #spotify-Song-menu::after,
 #spotify-Artist-menu::after, #spotify-Album-menu::after,
 #channel-mention-context::after, #mentions-filter::after,
-#dev-context::after*/ [role="menu"][id]::after  {
+#dev-context::after*/ [role="menu"][id]:not(#account)::after  {
     content: "";
     backdrop-filter: blur(var(--blur));
     top: 0;
