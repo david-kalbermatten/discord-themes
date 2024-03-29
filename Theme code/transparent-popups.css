@@ -96,7 +96,7 @@
 #manage-streams::after, #spotify-album-menu::after, #spotify-Song-menu::after,
 #spotify-Artist-menu::after, #spotify-Album-menu::after,
 #channel-mention-context::after, #mentions-filter::after,
-#dev-context::after*/ [role="menu"][id]:not(#account)::after  {
+#dev-context::after*/ [role="menu"][id]:not(#account)::after, .root_a28985:has(>div>.connectionsContainer__52d37)::before  {
     content: "";
     backdrop-filter: blur(var(--blur));
     top: 0;
@@ -126,7 +126,9 @@
 .rootWithShadow_d20cd6:has(>.reactorsContainer__867ec)::after,
 .root_a28985:has(>[id])::after, 
 .root_a28985:has(>.transitionGroup_cf0aed)::after, 
-.container_f93da8::after, .languageSelector__4840c::after, .recentMentionsPopout__40c54::after {
+.container_f93da8::after, .languageSelector__4840c::after, 
+.recentMentionsPopout__40c54::after, 
+.root_a28985:has(>div>.connectionsContainer__52d37)::after {
     content: "";
     top: 0;
     left: 0;
