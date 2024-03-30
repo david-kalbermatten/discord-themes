@@ -11,9 +11,10 @@
 
 /* Config */
 :root{
-    --blur: 20px; /*Popup blur size*/
-    --opacity: 0.5; /*Popup background opacity*/  
-    --radius: 8px; /*Popup border radius*/
-    --radius-small: 5px; /*Context popups radius*/
-  /*--pop-up-color: black; /*uncomment for custom Popup color*/ 
+    --blur-popup: 40px; /*Popup blur size*/
+    --opacity-popup: 0.6; /*Popup background opacity*/  
+    --radius-popup: 40px; /*Popup border radius*/
+    --radius-context: 20px; /*Context menu popups radius*/
+    /*--pop-up-color: black; /*uncomment for custom Popup color*/ 
+    /*--context-menu-border: 1px solid red; /*uncomment for custom border*/
 }
