@@ -62,7 +62,7 @@
 .authorize__9e6f3, .footer_b96583, .contentWrapper_f9bc93,
 .optionBox_d9023e, .smallDecorationPreviewsContainer__968c0,
 .decorationPreview__863a0, .decorationGridItem__4316a, .vc-notification-root,
-.navButtons__60fcf
+.navButtons__60fcf, paymentModalContent content__3ea16, .guildPopout_df13cd .body__50a07
 {
     background: none!important;
 }
@@ -81,7 +81,7 @@
 #manage-multi-account, .container_f93da8, [class^="toast_"],
 .languageSelector__4840c, .recentMentionsPopout__40c54, 
 .customColorPicker_bbc020, .root_a28985:has(>div>div>form>.header__5e5a6),
-.prompt__671aa, .vc-notification{
+.prompt__671aa, .vc-notification, .guildPopout_df13cd{
     background: transparent!important;
     backdrop-filter: blur(var(--blur-popup));
 }
@@ -139,7 +139,7 @@
 .recentMentionsPopout__40c54::after, 
 .root_a28985:has(>div>.connectionsContainer__52d37)::after,
 .popout_a6e77f::after, .customColorPicker_bbc020::after,
-.root_a28985:has(>div>div>form>.header__5e5a6)::after, .vc-notification::after {
+.root_a28985:has(>div>div>form>.header__5e5a6)::after, .vc-notification::after, .guildPopout_df13cd::after {
     content: "";
     top: 0;
     left: 0;
@@ -270,9 +270,13 @@ border-radius: inherit;
     border-radius: calc(var(--radius-popup) + 1px);
 }
 
+:not(aside):not(.customizationSection__0f57e)>div>div>.overlayBackground__2666e {
+    border-bottom-left-radius: max(var(--radius-popup) - 16px, 8px);
+    border-bottom-right-radius: max(var(--radius-popup) - 16px, 8px);
+}
+
 .submenuPaddingContainer__5a97c::before,
 .submenu_aed9ee.menu__088f7::before, .root_a28985::before, .form__7ab21::after,
-
 .menu__088f7::before, 
 .menu__088f7, 
 .menu__088f7::after, 
@@ -416,3 +420,22 @@ form.form__7ab21 {
 .scroller__8f066 {
     border: var(--context-menu-border)!important;
 }
+
+/*inner boxes*/
+.theme-dark .perks__63e5a,
+.theme-dark :not(aside):not(.customizationSection__0f57e)>div>div>.overlayBackground__2666e {
+    background: rgba(0, 0, 0, var(--opacity-popup-inner))!important;
+}
+.theme-light .perks__63e5a,
+.theme-light :not(aside):not(.customizationSection__0f57e)>div>div>.overlayBackground__2666e {
+    background: rgba(255, 255, 255, var(--opacity-popup-inner))!important;
+}
+
+.theme-dark .guildPopout_df13cd .footer__25bb8 {
+    background: rgba(0, 0, 0, 0.15);
+}
+.theme-light .guildPopout_df13cd .footer__25bb8 {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.perkRow__77c96 {border-bottom: 0;}
