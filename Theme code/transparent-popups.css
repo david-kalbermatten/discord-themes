@@ -104,7 +104,7 @@
 #spotify-Artist-menu::after, #spotify-Album-menu::after,
 #channel-mention-context::after, #mentions-filter::after,
 #dev-context::after*/ [role="menu"][id]:not(#account)::after, 
-.root_a28985:has(>div>.connectionsContainer__52d37)::before  {
+.root_a28985:has(>div>.connectionsContainer__52d37)::before {
     content: "";
     backdrop-filter: blur(var(--blur-popup));
     top: 0;
@@ -400,7 +400,7 @@ form.form__7ab21 {
     position: inherit;
 }
 
-.backdrop__1a911:not(:has(~div>div>div>div>.image__1dc70)) {
+.backdrop__1a911:not(:has(~div>div>:is(.modal_d2e7a7,.carouselModal__7e22f))) {
     background: none!important;
 }
 
