@@ -423,11 +423,12 @@ form.form__7ab21 {
 
 /*inner boxes*/
 .theme-dark .perks__63e5a,
-.theme-dark :not(aside):not(.customizationSection__0f57e)>div>div>.overlayBackground__2666e {
+.theme-dark :not(aside):not(.customizationSection__0f57e)>div>div>.overlayBackground__2666e,
+.theme-light :not(aside):not(.customizationSection__0f57e)>.userProfileOuterThemed__1fbd7 >div>.overlayBackground__2666e {
     background: rgba(0, 0, 0, var(--opacity-popup-inner))!important;
 }
 .theme-light .perks__63e5a,
-.theme-light :not(aside):not(.customizationSection__0f57e)>div>div>.overlayBackground__2666e {
+.theme-light :not(aside):not(.customizationSection__0f57e)>div:not(.userProfileOuterThemed__1fbd7)>div>.overlayBackground__2666e {
     background: rgba(255, 255, 255, var(--opacity-popup-inner))!important;
 }
 
