@@ -129,7 +129,8 @@
 .layer__6b5c3:has(.container__628c8)::before,
 .container__23c08::before,
 .focusLock__28507>.modal__6a96b::after,
-.popout__08442::after, [aria-labelledby]>.root_a28985::after,
+.popout__08442::after, 
+[aria-labelledby]>.root_a28985:not(:has(>[aria-labelledby]))::after,
 .uploadModal__6eb75::after, 
 .rootWithShadow_d20cd6:has(>.reactorsContainer__867ec)::after,
 .root_a28985:has(>[id])::after, 
@@ -399,9 +400,10 @@ form.form__7ab21 {
     position: inherit;
 }
 
-.backdrop__1a911 {
+.backdrop__1a911:not(:has(~div>div>div>div>.image__1dc70)) {
     background: none!important;
 }
+
 .rootWithShadow_d20cd6:not(:has(> .quickswitcher_b5bb0a)),
 .quickswitcher_b5bb0a {
     box-shadow: 0px 0px 1000px rgba(0, 0, 0, 1)!important;
