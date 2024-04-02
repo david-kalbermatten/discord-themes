@@ -129,7 +129,7 @@
 #manage-streams::after, #spotify-album-menu::after, #spotify-Song-menu::after,
 #spotify-Artist-menu::after, #spotify-Album-menu::after,
 #channel-mention-context::after, #mentions-filter::after,
-#dev-context::after*/ [role="menu"][id]:not(#account)::after, 
+#dev-context::after*/ [role="menu"][id]:not(#account):not(#guild-context)::after, 
 .root_a28985:has(>div>.connectionsContainer__52d37)::before {
     content: "";
     backdrop-filter: blur(var(--blur-popup));
@@ -484,3 +484,7 @@ form.form__7ab21 {
 .perkRow__77c96 {border-bottom: 0;}
 
 .premiumIconWrapper__7793e { display: none; }
+
+.layerContainer_a2fcaa {
+    z-index: 9999;
+}
