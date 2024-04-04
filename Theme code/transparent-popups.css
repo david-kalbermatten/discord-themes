@@ -134,7 +134,7 @@
 #manage-streams::after, #spotify-album-menu::after, #spotify-Song-menu::after,
 #spotify-Artist-menu::after, #spotify-Album-menu::after,
 #channel-mention-context::after, #mentions-filter::after,
-#dev-context::after*/ [role="menu"][id]:not(#account):not(#guild-context)::after, 
+#dev-context::after*/ [role="menu"][id]:not(#account):not(#guild-context):not(#guild-header-popout)::after, 
 .root_a28985:has(>div>.connectionsContainer__52d37)::before {
     content: "";
     backdrop-filter: blur(var(--blur-popup));
