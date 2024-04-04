@@ -113,7 +113,8 @@
 .customColorPicker_bbc020, .root_a28985:has(>div>div>form>.header__5e5a6),
 .prompt__671aa, .vc-notification, .guildPopout_df13cd, 
 :not(.contentWrapper_e0bb2c)>#emoji-picker-tab-panel,
-.selectFilterPopout_ef1367, .container__79284 {
+.selectFilterPopout_ef1367, .container__79284,
+.root_a28985:has(>.content__73b77)  {
     background: transparent!important;
     backdrop-filter: blur(var(--blur-popup));
 }
@@ -170,7 +171,9 @@
 .recentMentionsPopout__40c54::after, 
 .root_a28985:has(>div>.connectionsContainer__52d37)::after,
 .popout_a6e77f::after, .customColorPicker_bbc020::after,
-.root_a28985:has(>div>div>form>.header__5e5a6)::after, .vc-notification::after, .guildPopout_df13cd::after {
+.root_a28985:has(>div>div>form>.header__5e5a6)::after, 
+.vc-notification::after, .guildPopout_df13cd::after,
+.root_a28985:has(>.content__73b77)::after  {
     content: "";
     top: 0;
     left: 0;
@@ -457,10 +460,10 @@ form.form__7ab21 {
 }
 
 /*inner boxes*/
-.theme-dark .perks__63e5a, .theme-dark .benefit_a3ea9e {
+.theme-dark .perks__63e5a, .theme-dark .benefit_a3ea9e, .theme-dark .calloutContainer__941c0 {
     background: rgba(0, 0, 0, var(--opacity-popup-inner))!important;
 }
-.theme-light .perks__63e5a, .theme-light .benefit_a3ea9e {
+.theme-light .perks__63e5a, .theme-light .benefit_a3ea9e, .theme-light .calloutContainer__941c0 {
     background: rgba(255, 255, 255, var(--opacity-popup-inner))!important;
 }
 
