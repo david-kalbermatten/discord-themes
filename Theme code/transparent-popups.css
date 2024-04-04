@@ -65,7 +65,10 @@
 .navButtons__60fcf, paymentModalContent content__3ea16, 
 .guildPopout_df13cd .body__50a07,
 .skuSelectModalHeader__00be1, .skuSelectModalContent_f622e2, 
-.tier2__1364f, .tier0__2e127 {
+.tier2__1364f, .tier0__2e127, .body__1451f, .benefit_a3ea9e,
+.scroller_b7f6d8, .container__6e389, .voters_ddbfbc, 
+.addAnswerButton__1308f, .modalHeader_b1624c,
+.scrollTierBackground__89f3e, .wrapper_ba4346, .body__1451f {
     background: none!important;
 }
 
@@ -109,7 +112,8 @@
 .languageSelector__4840c, .recentMentionsPopout__40c54, 
 .customColorPicker_bbc020, .root_a28985:has(>div>div>form>.header__5e5a6),
 .prompt__671aa, .vc-notification, .guildPopout_df13cd, 
-:not(.contentWrapper_e0bb2c)>#emoji-picker-tab-panel{
+:not(.contentWrapper_e0bb2c)>#emoji-picker-tab-panel,
+.selectFilterPopout_ef1367, .container__79284 {
     background: transparent!important;
     backdrop-filter: blur(var(--blur-popup));
 }
@@ -192,7 +196,8 @@
     z-index: -1;
     border-radius: inherit;
 }
-.modal__082b3::after, .popout__24e32::after, .picker__6dca7::before, .prompt__671aa::after {
+.modal__082b3::after, .popout__24e32::after, .picker__6dca7::before, 
+.prompt__671aa::after, .selectFilterPopout_ef1367::after, .container__79284::after  {
     content: "";
     top: 0;
     left: 0;
@@ -330,7 +335,8 @@ border-radius: inherit;
 :not(aside):not(.customizationSection__0f57e)>div>div>div>div>svg>foreignObject>.banner__6d414 {
     background-color: transparent!important;
 }
-.resultsGroup_b221b0:before,.rolePillBorder_e3a889 {
+.resultsGroup_b221b0:before, .rolePillBorder_e3a889,
+.questionInput_f6087f {
     border: none!important;
 }
 .header__21b33 {
@@ -439,6 +445,7 @@ form.form__7ab21 {
 .rootWithShadow_d20cd6:not(:has(> .quickswitcher_b5bb0a)),
 .quickswitcher_b5bb0a {
     box-shadow: 0px 0px 1000px rgba(0, 0, 0, 1)!important;
+    border-radius: var(--radius-popup);
 }
 
 .root_a28985 {
@@ -450,10 +457,10 @@ form.form__7ab21 {
 }
 
 /*inner boxes*/
-.theme-dark .perks__63e5a {
+.theme-dark .perks__63e5a, .theme-dark .benefit_a3ea9e {
     background: rgba(0, 0, 0, var(--opacity-popup-inner))!important;
 }
-.theme-light .perks__63e5a {
+.theme-light .perks__63e5a, .theme-light .benefit_a3ea9e {
     background: rgba(255, 255, 255, var(--opacity-popup-inner))!important;
 }
 
@@ -487,4 +494,9 @@ form.form__7ab21 {
 
 .layerContainer_a2fcaa {
     z-index: 9999;
+}
+
+.theme-dark, .theme-light {
+    --modal-background: transparent;
+    --modal-footer-background: transparent;
 }
