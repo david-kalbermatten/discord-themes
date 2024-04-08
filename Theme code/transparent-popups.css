@@ -68,7 +68,8 @@
 .tier2__1364f, .tier0__2e127, .body__1451f, .benefit_a3ea9e,
 .scroller_b7f6d8, .container__6e389, .voters_ddbfbc, 
 .addAnswerButton__1308f, .modalHeader_b1624c,
-.scrollTierBackground__89f3e, .wrapper_ba4346, .body__1451f {
+.scrollTierBackground__89f3e, .wrapper_ba4346, .body__1451f,
+.wrapper__81567, .contentFill_bb9f67 {
     background: none!important;
 }
 
@@ -112,7 +113,6 @@
 .languageSelector__4840c, .recentMentionsPopout__40c54, 
 .customColorPicker_bbc020, .root_a28985:has(>div>div>form>.header__5e5a6),
 .prompt__671aa, .vc-notification, .guildPopout_df13cd, 
-:not(.contentWrapper_e0bb2c)>#emoji-picker-tab-panel,
 .selectFilterPopout_ef1367, .container__79284,
 .root_a28985:has(>.content__73b77)  {
     background: transparent!important;
@@ -120,6 +120,8 @@
 }
 
 /*blur before*/
+.wrapper__81567::before,
+:not(.contentWrapper_e0bb2c)>#emoji-picker-tab-panel::before,
 .root_a28985:has(>.form__7ab21)::before,
 #guild-header-popout::before,
 .container__84c26::before,
@@ -150,6 +152,7 @@
 }
 
 /*color and transparency before or after*/
+.wrapper__81567::after,
 .quickswitcher_b5bb0a::after,#sort-and-view::after, .container_a0ef70::before,
 .form__7ab21::after, #guild-header-popout::after, .container__84c26::after,
 :not(aside):not(.customizationSection__0f57e)>.userProfileOuterThemed__1fbd7::before,
@@ -502,4 +505,24 @@ form.form__7ab21 {
 .theme-dark, .theme-light {
     --modal-background: transparent;
     --modal-footer-background: transparent;
+}
+
+.theme-light {
+    --search-popout-option-non-text-color: rgba(0, 0, 0, 0.7);
+}
+.theme-dark {
+    --search-popout-option-non-text-color: rgba(255, 255, 255, 0.7);
+}
+
+.theme-light :is(.searchOption__3c857 .answer__9ff92, 
+    .searchOption__3c857 .filter__851fb, .resultsGroup_b221b0 .header__00739 ) {
+    color: rgba(0, 0, 0, 0.7);
+}
+.theme-dark :is(.searchOption__3c857 .answer__9ff92, 
+    .searchOption__3c857 .filter__851fb, .resultsGroup_b221b0 .header__00739 ) {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.theme-dark .tooltipPrimary__51b23 .tooltipPointer_f7411c, .theme-light .tooltipPrimary__51b23 .tooltipPointer_f7411c {
+    --background-floating: rgba(0, 0, 0, calc(var(--opacity-popup) / 2));
 }
