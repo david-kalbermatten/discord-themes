@@ -140,7 +140,7 @@
 #dev-context::after*/ [role="menu"][id]:not(#account):not(#guild-context):not(#guild-header-popout)::after, 
 .root_a28985:has(>div>.connectionsContainer__52d37)::before {
     content: "";
-    backdrop-filter: blur(var(--blur-popup)) saturate(var(--colorness));
+    backdrop-filter: blur(var(--blur-popup));
     top: 0;
     left: 0;
     position: absolute;
@@ -150,16 +150,6 @@
     z-index: -1;
     border-radius: inherit;
 }
-.wrapper__81567::before,
-.root_a28985:has(>.form__7ab21)::before,
-#guild-header-popout::before,
-.container__84c26::before,
-:not(aside):not(.customizationSection__0f57e)>div>.userProfileInner__8ff35:before, 
-.modal__082b3::before,
-.submenuPaddingContainer__5a97c::before, .container__628c8::before,
-#guild-context::before, #channel-attach::after, #friend-row::after,[role="menu"][id]:not(#account):not(#guild-context):not(#guild-header-popout)::after, 
-
-
 
 /*color and transparency before or after*/
 .wrapper__81567::after,
