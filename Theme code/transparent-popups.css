@@ -158,10 +158,7 @@
 .modal__082b3::before,
 .submenuPaddingContainer__5a97c::before, .container__628c8::before,
 #guild-context::before, #channel-attach::after, #friend-row::after,[role="menu"][id]:not(#account):not(#guild-context):not(#guild-header-popout)::after, 
-.root_a28985:has(>div>.connectionsContainer__52d37)::before {
-        mask: linear-gradient(to top,  rgba(255,255,255, calc(1 - var(--purity) * 0.01)) 0% 100%, black 100%);
 
-}
 
 
 /*color and transparency before or after*/
