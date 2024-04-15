@@ -1120,3 +1120,7 @@ div#---new-messages-bar,
 .theme-dark .matchingPostsRow__6cdb0 {
     background: rgba(255, 255, 255, 0.05);
 }
+
+.profilePanel_e2cafe .userPanelInner__3184c {
+    background: transparent !important;
+}
