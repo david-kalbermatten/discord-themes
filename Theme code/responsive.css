@@ -295,19 +295,19 @@ h3.defaultColor__30336.text-sm-normal__95a78.defaultColor__8610e {
     border: 0;
 }
 
-.profilePanel_e2cafe .userPanelOuter_eb00b1,
+.profilePanel_e2cafe .userPanelOuter_df01a5,
 .upload_c98ecb {
     background: var(--bg-overlay-3, var(--background-secondary)) !important;
 }
-.profilePanel_e2cafe .userPanelInner_f9edb8 {
+.profilePanel_e2cafe .userPanelInner__3184c {
     background: transparent !important;
 }
 
-.profilePanel_e2cafe .userProfileInner__61cc1:before {
+.profilePanel_e2cafe .userProfileInner__8ff35:before {
     background-color: transparent;
 }
 
-.userProfileInnerThemedNonPremium_ed9022 {
+.userProfileInnerThemedNonPremium_b64fb4 {
     background: var(--bg-overlay-3, var(--background-secondary));
 }
 .profileBadges__1f2ab {
@@ -931,7 +931,7 @@ code {
     ) !important;
 }
 
-.overlayBackground__2666e:not(.userPopoutOverlayBackground_bf6444),
+.overlayBackground__345c9:not(.userPopoutOverlayBackground__3e7e6),
 .messageGroupWrapper__1fce2,
 .background__4e802,
 .contentRegionScroller__9ae20,
