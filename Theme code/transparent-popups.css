@@ -150,6 +150,10 @@
     z-index: -1;
     border-radius: inherit;
 }
+/*fix user review profile popup*/
+:not(aside):not(.customizationSection__0f57e)>div>.userProfileInner__8ff35:before {
+    z-index: inherit;
+}
 
 /*color and transparency before or after*/
 .wrapper__81567::after,
